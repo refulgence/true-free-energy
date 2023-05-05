@@ -1,0 +1,9 @@
+{
+  "name": "true-free-energy",
+  "version": "0.1.2",
+  "title": "True Free Energy",
+  "author": "Tename",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1"],
+  "description": "Boosts UPS by removing energy consumption from all entities. Can also remove burnable fuel / liquid fuel / heat consumption as well. In addition, it can also make robots and trains not consume any power, removing the need for recharging / refueling."
+}
