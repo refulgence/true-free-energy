@@ -2,7 +2,11 @@ for _, type in pairs({ "assembling-machine", "beacon", "resource", "electric-tur
   for k, v in pairs(data.raw[type]) do
     if settings.startup["tfe-remove-electricity-cost"].value == true and v.energy_source ~= nil then
       if v.energy_source["type"] == "electric" then
+        if v.name == "dino-dig-site" then
+          v.energy_source["drain"] = "0W"
+        else
           v.energy_source = {type = "void"}
+        end
       end
     end
     if settings.startup["tfe-remove-burner-cost"].value == true and v.energy_source ~= nil then
